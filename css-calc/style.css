@@ -1,0 +1,27 @@
+.container {
+    background-color: aqua;
+    padding: 20px;
+    width: 300px;
+    display: flex;
+}
+.pink {
+    padding: 10px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.light {
+    background-color: pink;
+    width: calc(100% - 20px);
+}
+.dark {
+    background-color: palevioletred;
+    width: 20px;
+}
+.green {
+    display: inline-block;
+    background-color: green;
+    height: 20px;
+    border: 1px solid;
+    box-sizing: border-box;
+    width: calc(100% / 3)
+}

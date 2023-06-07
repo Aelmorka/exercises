@@ -1,0 +1,134 @@
+.container {
+    display: flex;
+    background-color: burlywood;
+    flex-wrap: wrap;
+}
+.blue {
+    background-color: blueviolet;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: 10px;
+}
+
+.red {
+    background-color: crimson;
+}
+
+.vertical {
+    width: 10px;
+    margin-left: 20px;
+    height: 100%;
+}
+
+.horizontal {
+    height: 10px;
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    left: 0;
+}
+
+.chart {
+    margin: 10px;
+    width: 350px;
+    height: 200px;
+    position: relative;
+    background-color: aqua;
+}
+
+.money {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.time {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.grey {
+    width: 30px;
+    background-color: bisque;
+    position: absolute;
+    bottom: 0;
+}
+
+.block1 {
+    height: 40px;
+    left: 30px;
+}
+
+.block2 {
+    height: 100px;
+    left: 70px;
+}
+.block3 {
+    height: 160px;
+    left: 110px;
+}
+.block4 {
+    height: 140px;
+    left: 150px;
+}
+.block5 {
+    height: 110px;
+    left: 190px;
+}
+.block6 {
+    height: 70px;
+    left: 230px;
+}
+
+.u {
+    height: 200px;
+    width: 250px;
+    margin: 10px;
+    position: relative;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.top {
+    width: calc(100% - 100px);
+    height: calc(100% - 50px);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.back_color {
+    background-color: burlywood;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+    height: calc(100% - 50px);
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.eaten_chocolate {
+    background-color: blue;
+    width: 400px;
+    height: 200px;
+}
+
+.piece {
+    background-color: hotpink;
+    height: 100px;
+    width: 100px;
+    float: left;
+    box-sizing: border-box;
+    border: 1px solid;
+}
+
+.clear {
+    clear: both;
+}
