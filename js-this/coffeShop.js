@@ -10,14 +10,14 @@ function drinkCoffee() {
         },
         money: 0,
         makeDrink: function (drinkType) {
-            if (!this.drinkRequirements[drinkType]) {
-                console.log("Sorry, we don't make ", drinkType)
+            if (!(drinkType in this.drinkRequirements)) {
+                console.log(`Sorry, we don't make ${drinkType}`)
                 return 'type'
             } else if (this.beans < this.drinkRequirements[drinkType].beans) {
                 console.log("Sorry, we're all out of beans")
                 return 'beans'
             } else {
-                console.log('Here is your ', drinkType, ' ',  this.drinkRequirements[drinkType].beans, ' beans wasted')
+                console.log(`Here is your ${drinkType}, ${this.drinkRequirements[drinkType].beans} beans wasted`)
                 this.beans -= this.drinkRequirements[drinkType].beans 
                 return 'drink'
             }
