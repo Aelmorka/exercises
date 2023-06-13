@@ -1,0 +1,92 @@
+.container {
+    display: grid;
+    height: 500px;
+    width: 100%;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-areas:  
+        "w w w w g g g"
+        "p p p p g g g"
+        "v v v v v v v"
+        ". . . r r r r"
+        ". . . b b b b"
+        ". . . b b b b"; 
+}
+
+.whites-top {
+    grid-area: w;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.white {
+    background-color: white;
+    border: 2px solid; 
+    box-shadow: 5px 5px 10px;
+    height: 40px;
+    width: calc(100% - 20px);
+    margin: 10px;
+}
+
+.purple1-wrap {
+    grid-area: p;
+}
+
+.purple2-wrap {
+    grid-area: r;
+}
+
+.purple {
+    background-color: purple;
+    border: 2px solid;
+    height: 40px;
+    box-shadow: 5px 5px 10px;
+    margin: 0 10px;
+}
+.grey-wrap {
+    grid-area: g;
+}
+.grey {
+    background: radial-gradient(circle at center, white 0, grey 100%);
+    border: 1px solid;
+    height: 150px;
+    width: 150px;
+    margin: 0 auto;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px;
+
+}
+
+.violet-wrap {
+    grid-area: v;
+}
+
+.violet {
+    background-color: blueviolet;
+    border: 1px solid;
+    height: 40px;
+    box-shadow: 5px 5px 10px;
+    margin: 0 10px;
+}
+
+.blue-wrap {
+    grid-area: b;
+}
+
+.blue {
+    background-color: aqua;
+    border: 1px solid;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "h ."". t";
+    box-shadow: 5px 5px 10px;
+    margin: 0 10px;
+}
+
+.white1-wrap {
+    grid-area: h;
+}
+.white2-wrap {
+    grid-area: t;
+}
+
