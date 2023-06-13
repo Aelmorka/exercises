@@ -1,0 +1,73 @@
+.container {
+    display: grid;
+    height: 80vh;
+    grid-template-rows: 1fr 10fr 1fr;
+    align-items: end;
+}
+
+.menu {
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    height: 100%;
+
+}
+
+.menu-item {
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-self: center;
+}
+
+.letters {
+    display: inline-block;
+    border: 1px solid;
+    margin: auto;
+}
+.letter {
+    padding: 10px;
+    border: 1px solid;
+    font-size: 20px;
+}
+.brochure {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.col {
+    padding: 10px;
+    border: 1px solid;
+}
+.blog {
+    width: 150px;
+    margin: 20px auto 40px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.title {
+    border-bottom: 1px solid;
+    padding: 5px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.cont {
+    padding: 5px;
+}
+.dark {
+    background-color: rgb(125, 18, 226);
+}
+.light {
+    background-color: rgb(203, 169, 234);
+}
+
+.footer {
+    background-color: aqua;
+    height: 100%;
+}
