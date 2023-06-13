@@ -19,7 +19,7 @@ h1 {
 }
 .friend {
     padding: 5px;
-    background-color: rgb(187, 89, 204);
+    background-color: #9b59b6;
     margin: 5px;
 }
 
@@ -47,6 +47,7 @@ button {
 
 input {
     border-radius: 0;
+    border: 1px solid #7f8c8d;
 }
 
 .chat {
@@ -62,12 +63,12 @@ input {
     justify-content: end;
 }
 .grey {
-    background-color: #2c3e50;
+    background-color: #7f8c8d;
     display: inline-block;
     padding: 5px;
 }
 .green {
-    background-color: greenyellow;
+    background-color: #2ecc71;
     display: inline-block;
     padding: 5px;
 }
