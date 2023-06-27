@@ -57,22 +57,24 @@ function shop() {
     $( document ).ready(function() {
         let cart = $("#cart")
         $(".item").click(function() {
-            if ($(`#${$(this).text()}`).length == 0 && $(this).data().instock) {
-                let elm = $(`<div id="${$(this).text()}" data-num="1">${$(this).text()}</div>`)
-                elm.css("cursor", "pointer")
-                cart.append(elm)
-                elm.click(function() {
-                    if (elm.data().num == 1) {
-                        elm.remove()  
-                    } else {
-                        elm.data().num--
-                        elm.text(`${elm.attr('id')} x ${elm.data().num}`)
-                    }
-                })
-            } else {
-                let elm = $((`#${$(this).text()}`))
-                elm.data().num++
-                elm.text(`${elm.attr('id')} x ${elm.data().num}`)
+            if ($(this).data().instock) {
+                if ($(`#${$(this).text()}`).length == 0) {
+                    let elm = $(`<div id="${$(this).text()}" data-num="1">${$(this).text()}</div>`)
+                    elm.css("cursor", "pointer")
+                    cart.append(elm)
+                    elm.click(function() {
+                        if (elm.data().num == 1) {
+                            elm.remove()  
+                        } else {
+                            elm.data().num--
+                            elm.text(`${elm.attr('id')} x ${elm.data().num}`)
+                        }
+                    })
+                } else {
+                    let elm = $((`#${$(this).text()}`))
+                    elm.data().num++
+                    elm.text(`${elm.attr('id')} x ${elm.data().num}`)
+                }
             }
         })
     })
