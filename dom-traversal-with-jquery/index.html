@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+    <title>DOM traverse</title>
+    <style>
+        #lab {
+            border: 2px solid;
+            background-color: green;
+            padding: 20px;
+            display: flex;
+            width: 800px;
+            margin: 50px auto;
+            justify-content: space-evenly;
+        }
+        .computer {
+            padding: 20px;
+            background-color: grey;
+            border: 1px solid;
+            border-radius: 10px; 
+            width: 200px; 
+        }
+        button {
+            display: block;
+            padding: 5px 10px;
+            background-color: lightgreen;
+            cursor: pointer;
+            width: 150px;
+            margin: 10px auto;
+        }
+        .message {
+            width: 100%;
+            background-color: greenyellow;
+            border: 1px solid;
+            height: 60px;
+        }
+        .staff {
+            wiidth: 100%;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="lab">
+            <div class="computer" data-id="F00T-W411">
+                <div class="message"></div>
+                <p class="BUS">CX9-3312</p>
+                <p class="MB">#000000111</p>
+                <div class="processor" id="J0Y-FU11">
+                    <span class="QR">Wizz-Knob</span>
+                    <span class="QR">Nooq</span>
+                    <button class="generator">Cromp</button>
+                </div>
+                <div class="ram">
+                    <div class="DDR"><button class="validator">Womp</button></div>
+                </div>
+                <div class="staff"></div>
+            </div>
+
+            <div class="computer" data-id="G11U-X522">
+                <div class="message"></div>
+                <p class="BUS">DY0-4423</p>
+                <p class="MB">#111111222</p>
+                <div class="processor" id="K1Z-GV22">
+                    <span class="QR">Quimbor</span>
+                    <span class="QR">Kroon</span>
+                    <button class="generator">Dimp</button>
+                </div>
+                <div class="ram">
+                    <div class="DDR"><button class="validator">Ballimp</button></div>
+                </div>
+                <div class="staff"></div>
+            </div>
+
+            <div class="computer" data-id="H22V-Y633">
+                <div class="message"></div>
+                <p class="BUS">EZ1-5534</p>
+                <p class="MB">#222222333</p>
+                <div class="processor" id="L2A-HW33">
+                    <span class="QR">Shelk</span>
+                    <span class="QR">Mutix</span>
+                    <button class="generator">Phomer</button>
+                </div>
+                <div class="ram">
+                    <div class="DDR"><button class="validator">Mayth</button></div>
+                </div>
+                <div class="staff"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
