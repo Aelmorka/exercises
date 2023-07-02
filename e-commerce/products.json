@@ -1,0 +1,22 @@
+{"products" : [
+    {
+        "name": "Apple",
+        "price": 10,
+        "img": ""
+    },
+    {
+        "name": "Orange",
+        "price": 15,
+        "img": ""
+    },
+    {
+        "name": "Cucumber",
+        "price": 7,
+        "img": ""
+    },
+    {
+        "name": "Potato",
+        "price": 3,
+        "img": ""
+    }
+]}
