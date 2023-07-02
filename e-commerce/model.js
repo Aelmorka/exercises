@@ -22,7 +22,7 @@ function Shop() {
         }
     ]
     let _cart = []
-
+    let _cartQty = 0
 
     function getProducts() {
         return JSON.parse(JSON.stringify(_products))
@@ -49,16 +49,23 @@ function Shop() {
         } else {
             _cart[cartIndex].quantity++
         }
+        _cartQty++
     }
 
     function removeFromCart(index) {
+        _cartQty -= _cart[index].quantity
         _cart.splice(index, 1)
+    }
+
+    function getCartQty() {
+        return _cartQty
     }
 
     return {
         getProducts,
         getCart,
         addToCart,
-        removeFromCart
+        removeFromCart,
+        getCartQty
     }
 }

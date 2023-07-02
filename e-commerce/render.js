@@ -20,6 +20,11 @@ function Render() {
         main.append(info)
         return main
     }
+    function renderQty(qty) {
+        let cartLabel = $("#cart")
+        cartLabel.empty()
+        cartLabel.append($(`<span>Cart items: ${qty}</span>`))
+    }
 
     function renderList(list, mode) {
         let container = mode == 'products' ? prodList.find(".items") : cartList.find(".items")
@@ -39,6 +44,7 @@ function Render() {
     }
     return {
         renderList, 
-        closeAllAcceptThis
+        closeAllAcceptThis,
+        renderQty
     }
 }

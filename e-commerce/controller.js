@@ -17,10 +17,12 @@ $(document).ready(function() {
     $("body").on("click", ".item__add", function() {
         shop.addToCart($(this).closest(".item").data().id)
         render.renderList(shop.getProducts(), $(this).attr("id"))
+        render.renderQty(shop.getCartQty())
     })
 
     $("body").on("click", ".item__delete", function() {
         shop.removeFromCart($(this).closest(".item").data().id)
         render.renderList(shop.getCart(), $(this).attr("id"))
+        render.renderQty(shop.getCartQty())
     })
 })
