@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,400&display=swap');
 body {
-    background-color: rgb(224, 247, 226);
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
 }
 .main {
     max-width: 800px;
@@ -28,7 +30,7 @@ body {
     padding: 20px;
     width: 335px;
     margin-bottom: 10px;
-    box-shadow: 5px 5px 10px rgb(121, 186, 121);
+    box-shadow: 5px 5px 10px rgb(69, 69, 69);
 }
 .item__img {
     background-color: white;
@@ -39,14 +41,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 2px 2px 10px rgb(121, 186, 121);
+    box-shadow: 2px 2px 10px rgb(69, 69, 69);
 }
 .item__info {
     padding: 0 20px;
     height: 100%;
 }
 .item__name {
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .item img {
